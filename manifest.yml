@@ -1,0 +1,10 @@
+---
+applications:
+- name: python-demo
+  memory: 512MB
+  disk_quota: 1GB
+  buildpack: https://github.com/rhardt-pivotal/sidecar-buildpack.git
+  host: python-demo-${random-word}
+  services:
+    - service-registry
+
